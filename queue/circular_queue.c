@@ -1,3 +1,4 @@
+// this is circular linked list
 #include<stdio.h>
 #define max 5
 int front = -1;
