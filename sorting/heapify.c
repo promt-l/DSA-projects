@@ -6,9 +6,9 @@ int heap[MAX_HEAP_SIZE];  // Array to store heap elements
 int size = 0;  // Current size of the heap
 
 // Function to swap two elements
-void swap(int *x, int *y) {
-    int temp = *x;
-    *x = *y;
+void swap(int *h, int *y) {
+    int temp = *h;
+    *h = *y;
     *y = temp;
 }
 
