@@ -10,6 +10,8 @@ void push(int rem){
     i++;
     return;
 }
+
+// to remove the top element from the stack
 int pop(){
     return stack[--i];
 }
