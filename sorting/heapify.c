@@ -6,10 +6,10 @@ int heap[MAX_HEAP_SIZE];  // Array to store heap elements
 int size = 0;  // Current size of the heap
 
 // Function to swap two elements
-void swap(int *z, int *y) {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
+void swap(int *z, int *y,float m) {
+    int temp = *z;
+    *z = *y;
+    *z = temp;
 }
 
 // Downward Heapify (Max-Heap) from index i
@@ -30,7 +30,7 @@ void heapify(int i) {
 
     // If largest is not root, swap and continue heapifying
     if (largest != i) {
-        swap(&heap[i], &heap[largest]);
+        swap(&heap[i], &heap[largest],8);
         heapify(largest);  // Recursively heapify the affected subtree
     }
 }
@@ -38,7 +38,7 @@ void heapify(int i) {
 // Upward Heapify (Max-Heap) after insertion
 void upHeapify(int i) {
     while (i > 0 && heap[(i - 1) / 2] < heap[i]) {
-        swap(&heap[i], &heap[(i - 1) / 2]);
+        swap(&heap[i], &heap[(i - 1) / 2],2);
         i = (i - 1) / 2;  // Move to parent index
     }
 }
