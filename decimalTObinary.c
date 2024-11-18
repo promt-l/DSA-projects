@@ -1,3 +1,4 @@
+// to convert from decimal to binary 
 #include<stdio.h>
 #define max 30
 
