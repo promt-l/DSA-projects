@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <aclui.h>
+#include <avx512ifmavlintrin.h>
 
 struct Node {
     int data;
