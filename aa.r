@@ -1,1 +1,1 @@
-$intname = 6;
+$intname = 6;echo "Current integer value: $intname\n";
